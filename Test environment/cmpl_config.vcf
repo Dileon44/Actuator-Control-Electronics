@@ -1,0 +1,47 @@
+//////////////////////////////////////////////////////////////////////////////
+//
+//----------------------------------------------------------------------------
+//                      Verification configuration file
+//----------------------------------------------------------------------------
+//
+//  [Tool]:     Icarus Verilog
+//
+//  [Project]:  Actuator control electronic
+//
+//////////////////////////////////////////////////////////////////////////////
+
+/****************************************************************************/
+/*---------------------------- Compilation list ----------------------------*/
+/****************************************************************************/
+    /*================= Definitions =================*/
+        +define+REPORT_BENCH_ID="Icarus_Verilog_v.11.0"
+
+    /*================ Library files ================*/
+        +incdir+lib/inc
+        +incdir+tb/inc
+
+    /*=============== Testbench files ===============*/
+        lib/mod/clk_tb_gen.sv
+        lib/mod/spi_slave_tb.sv
+        lib/mod/sig_gen_tb_sin.v
+        lib/mod/clk_state_detector_tb.v
+
+    /*================= Source files =================*/
+        src/ADC_MCP3201.sv
+        src/SelectNPulse.sv
+        src/MovingAverageFilter.sv
+        src/VoltToDegrees.sv
+        src/Mult.sv
+        src/Filter.sv
+        src/PulseGenerator.sv
+        src/FilterButtons.sv
+        src/main.sv
+        src/Adder.sv
+        src/PI.sv
+        src/sin.sv
+        src/General.sv
+        src/ModeHub.sv
+        src/DriveControl.sv
+        src/IndicatorsHub.sv
+        src/uart.sv
+        src/uart_tx.sv
